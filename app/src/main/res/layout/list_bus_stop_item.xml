@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingLeft="@dimen/bus_stop_item_horizontal_padding"
+    android:paddingRight="@dimen/bus_stop_item_horizontal_padding"
+    android:paddingTop="@dimen/bus_stop_item_vertical_padding"
+    android:paddingBottom="@dimen/bus_stop_item_vertical_padding">
+
+    <TextView
+        android:id="@+id/tvStopName"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        tools:text= "@tools:sample/cities"
+        />
+
+    <TextView
+        android:id="@+id/tvArrivalTime"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        tools:text= "@tools:sample/date/hhmm"
+        />
+
+</LinearLayout>
